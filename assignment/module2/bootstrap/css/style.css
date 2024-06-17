@@ -1,0 +1,124 @@
+body {
+  	font-family: "Open Sans", sans-serif;
+  	color:#000;
+}
+
+.clear {
+ 	clear:both;
+}
+
+.profile_bg {
+	background-color:#622777;
+	color:#fff;
+	display:block;
+	padding:20px;
+}
+
+.fleft {
+	float:left;
+}
+
+.section {
+	background-color:#fff;
+	color:#878787;
+	border-radius:4px;
+}
+
+.profile_image {
+	text-align:center;
+	border-right:1px solid #dbdddc;
+}
+
+.profile_setting {
+	border-right:1px solid #dbdddc;
+	padding:15px;
+}
+
+.profile_setting h5 {
+	color:#000;
+}
+
+.profile_experience {
+	padding:15px;
+}
+
+.profile_img {
+	margin-top:140px;
+}
+
+.profile_img img {
+	border-radius:100%;
+	border:1px solid #878787;
+}
+
+.exp_count {
+	border:1px solid #878787;
+	border-radius:3px;
+	vertical-align:middle;
+	text-align:center;
+}
+
+.profile_button {
+	background-color:#622777;
+	color:#fff;
+	border-radius:8px;
+	border:1px solid #622777;
+	font-size:16px;
+	padding:5px;
+	margin:18px;
+	text-align:center;
+	width:30%;
+	cursor:pointer;
+}
+.profile_button:hover {
+	color:#fff;
+}
+
+.btn-submit {
+	background-color:#ea8d94;
+	border:1px solid #ea8d94;
+	color:#ffffff;
+	padding:5px;
+	border-radius:5px;
+	width:100%;
+}
+
+.btn-view-more {
+	background-color:#7ec5d7;
+	border:1px solid #7ec5d7;
+	color:#ffffff;
+	padding:5px;
+	border-radius:5px;
+	width:100%;
+}
+
+.product-listing {
+	background-color:#eeeeee;
+	color:#000000;
+}
+
+.img_bg {
+	background-color:#ebf8fe;
+}
+
+.details {
+	background-color:#ffffff;
+	padding:20px;
+	border:3px solid #ebf8fe;
+	border-radius:4px;
+	margin:11px 4px 3px 25px;
+}
+
+.price {
+	color:#93e2f6;
+	font-weight:bold;
+}
+
+.product_title {
+	color:#b2d0dc;
+}
+
+.category_nm {
+	color:#dfdee6;
+}
+

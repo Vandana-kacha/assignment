@@ -1,0 +1,114 @@
+body {
+  	font-family: "Open Sans", sans-serif;
+  	color:#404c1F;
+}
+
+.user_form {
+	min-height:400px;
+	border:1px solid #94AB3D;
+	width:45%;
+	border-radius:4px;
+	margin:0 auto;
+	text-align:center;
+	box-shadow:0px 0 30px rgba(1, 41, 112, 0.1);
+}
+
+.clear {
+ 	clear:both;
+}
+
+.pt-5 {
+ 	padding-top:5px;
+}
+
+.header {
+	width:45%;
+	 margin:0 auto;
+	 text-align:center;
+}
+
+h2 {
+	text-align:left;
+	font-size:20px;
+}
+
+.section {
+	background-color:#94AB3D;
+	padding:15px;
+}
+
+.form-group {
+	background-color:#B8CE69;
+	/*mixcolor:#C0D47B;*/
+	border:3px solid #D4E1A4;
+	border-radius:5px;
+	padding:8px;
+	margin:5px;
+	height:40px;
+	line-height:40px;
+}
+
+.card_group {
+	height:75px;
+	line-height:75px;
+}
+
+.card_group p {
+	line-height:10px;
+	padding:2px;
+	font-weight:bold;
+	margin:2px;
+}
+
+.text-area {
+	width: 50%;
+    padding: 8px 8px;
+    font-size: 13px;
+    border:1px solid #ddd;
+    border-radius:5px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.label {
+	float:left;
+	margin-right:4px;
+	margin-left:5px;
+	font-weight:bold;
+}
+
+.input-box {
+    width: 50%;
+    padding: 8px 8px;
+    font-size: 13px;
+    border:1px solid #ddd;
+    border-radius:5px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.card_check {
+	font-weight: bold;
+	float: left;
+	margin-top: -12px;
+}
+
+.section img {
+	vertical-align:middle;
+	border:1px solid #404c1F;
+	border-radius:3px;
+}
+
+
+.submit_btn {
+	background-color:#000;
+	color:#fff;
+	border-radius:40px;
+	border:1px solid #000;
+	font-size:19px;
+	padding:8px;
+	text-transform:uppercase;
+	margin:15px;
+	width:20%;
+	cursor:pointer;
+}

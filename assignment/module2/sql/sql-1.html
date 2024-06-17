@@ -1,0 +1,68 @@
+a) Get First_Name from employee table using alias name “Employee Name”.
+
+Answer : SELECT first_name as "Employee Name" FROM `employee`;
+
+b) Get FIRST_NAME, Joining year, Joining Month and Joining Date from employee
+table.
+
+Answer : SELECT first_name,YEAR(joining_date) as "Joining year",MONTH(joining_date) as "Joining month",joining_date as "Joining date" FROM `employee`;
+
+
+c) Get all employee details from the employee table order by First Name Ascending
+And Salary descending?
+
+Answer : SELECT * FROM `employee` order by first_name asc,salary desc;
+
+
+d) Get employee details from employee table whose first name contains „o‟.
+
+Answer : SELECT * FROM `employee` WHERE first_name like '%o%';
+
+
+e) Get employee details from employee table whose joining month is “January”.
+
+Answer : Select * from employee where month(joining_date)='01';
+
+
+f) Get department, total salary with respect to a department from employee table
+Order By total salary descending.
+
+Answer : SELECT department,salary FROM `employee` group by department order by salary desc;
+
+
+g) Get department wise maximum salary from employee table order by salary
+ascending?
+
+
+Answer : SELECT MAX(salary) FROM `employee` group by department;
+
+
+h) Select first_name, incentive amount from employee and incentives table for those
+Employees who have incentives and incentive amount greater than 3000
+
+Answer : SELECT e.first_name,inc.incentive_amt as incentive_amt FROM `employee` e LEFT JOIN incentive inc on inc.employee_ref_id = e.emp_id WHERE incentive_amt is NOT NULL and incentive_amt > 3000;
+
+
+i) Select 2nd Highest salary from employee table.
+
+
+Answer : SELECT first_name, MAX(salary) AS salary FROM employee WHERE salary < (SELECT MAX(salary) FROM employee);
+
+
+j) Select first_name, incentive amount from employee and incentives table for all
+Employees who got incentives using left join.
+
+Answer : SELECT e.first_name,ins.incentive_amt FROM employee e LEFT JOIN incentive ins on ins.employee_ref_id = e.emp_id WHERE incentive_amt is NOT NULL;
+
+
+k) Create View OF Employee table in which store first name, last name and salary
+only.
+
+
+Answer : SELECT first_name,last_name,salary FROM `employee`
+
+
+l) Create Procedure to find out department wise highest salary.
+
+
+m) Create after Insert trigger on Employee table which insert records in view table

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Tops Technology - HTML,CSS,SQL</title>
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <div class="header">
+            <h1>User Details Form</h1>
+        </div>
+
+        <div class="user_form">
+
+            <div class="section">
+
+                <h2>Step 1 : Your details </h2>
+                <div class="form-group">
+                    <label class="label">Name</label>
+                    <div><input type="text" name="name" id="name" class="input-box" placeholder="First name and last name"></div>
+                </div>
+
+                <div class="form-group">
+                    <label class="label">Email</label>
+                    <div><input type="text" name="name" id="name" class="input-box" placeholder="example@domain.com"></div>
+                </div>
+
+                <div class="form-group">
+                    <label class="label">Phone</label>
+                    <div><input type="text" name="name" id="name" class="input-box" placeholder="+ 918877889966"></div>
+                </div>
+
+            </div>
+
+            <div class="section">
+                
+                <h2>Step 2 : Delivery address </h2>
+                <div class="form-group">
+                    <label class="label">Address</label>
+                    <div><textarea name="address" id="address" class="text-area"></textarea></div>
+                </div>
+
+                <div class="form-group">
+                    <label class="label">Post code</label>
+                    <div><input type="text" name="post_code" id="post_code" class="input-box"></div>
+                </div>
+
+                <div class="form-group">
+                    <label class="label">Country</label>
+                    <div><input type="text" name="country" id="country" class="input-box"></div>
+                </div>
+
+            </div>
+
+            <div class="section">
+                
+                <h2>Step 3 : Card details </h2>
+                <div class="form-group card_group">
+                    <p style="text-align: left;">Card Type</p> 
+                    <div class="card_check">
+                        <input type="radio" name="card_type" id="card_type" value=""> <img src="https://cdn.freebiesupply.com/logos/large/2x/visa-logo-png-transparent.png" width="40" height="20"> Visa &nbsp;&nbsp;
+                        <input type="radio" name="card_type" id="card_type" value=""> <img src="https://banner2.cleanpng.com/20180802/yet/kisspng-american-express-logo-credit-card-payment-seo-for-the-finance-industry-experience-and-solu-5b62e8845e9914.5428316515332087083875.jpg" width="30" height="30"> AmEx &nbsp;&nbsp;
+                        <input type="radio" name="card_type" id="card_type" value=""> <img src="https://brand.mastercard.com/content/dam/mccom/brandcenter/thumbnails/mc_dla_symbol_92.png" width="30" height="20"> Mastercard &nbsp;&nbsp;
+                    </div>
+                </div>
+
+                <div class="form-group pt-5">
+                    <label class="label">Card number</label>
+                    <div><input type="text" name="card_number" id="card_number" class="input-box"></div>
+                </div>
+
+                <div class="form-group">
+                    <label class="label">Security code</label>
+                    <div><input type="text" name="security_code" id="security_code" class="input-box"></div>
+                </div>
+
+                <div class="form-group">
+                    <label class="label">Name on card</label>
+                    <div><input type="text" name="name_on_card" id="name_on_card" class="input-box" placeholder="Excat name on card"></div>
+                </div>
+
+                <input type="button" name="submit" id="submit" class="submit_btn" value="Buy It!">
+
+            </div>
+
+        </div>
+    </body>
+</html>
