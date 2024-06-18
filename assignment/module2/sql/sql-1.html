@@ -59,7 +59,9 @@ k) Create View OF Employee table in which store first name, last name and salary
 only.
 
 
-Answer : SELECT first_name,last_name,salary FROM `employee`
+Answer : CREATE VIEW tbl_emp AS
+SELECT first_name, last_name, salary
+FROM employees;
 
 
 l) Create Procedure to find out department wise highest salary.
