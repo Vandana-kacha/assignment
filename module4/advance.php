@@ -111,17 +111,17 @@ echo "<b>12) What are PHP Magic Methods/Functions? </b> <br><br>";
 echo " There are 15 Magic methods/functions <br>
     __construct() <br>
     __destruct() <br>
-    __call($fun, $arg) <br>
-    __callStatic($fun, $arg) <br>
-    __get($property) <br>
-    __set($property, $value) <br>
-    __isset($content) <br>
-    __unset($content) <br>
+    __call(&#36;fun, &#36;arg) <br>
+    __callStatic(&#36;fun, &#36;arg) <br>
+    __get(&#36;property) <br>
+    __set(&#36;property, &#36;value) <br>
+    __isset(&#36;content) <br>
+    __unset(&#36;content) <br>
     __sleep() <br>
     __wakeup() <br>
     __toString() <br>
     __invoke() <br>
-    __set_state($array) <br>
+    __set_state(&#36;array) <br>
     __clone() <br>
     __debugInfo()<br> <br>";
 
@@ -181,4 +181,127 @@ echo "<b>16) Use of The &#36;this keyword </b> <br><br>";
 
 echo " &#36;this is a reserved keyword in PHP that refers to the calling object. used to access static or class variables or methods. <br> <br>";
 
+echo "<b>17) What is jQuery</b> <br><br>";
+
+echo "jQuery is a lightweight,small,feature-rich javascript library <br><br>";
+
+echo "<b>18) How are JavaScript and jQuery different?</b> <br><br>";
+
+echo "JavaScript is a programming language while jQuery is a library that consists of JavaScript code <br><br>";
+
+echo "<b>19) Which is the starting point of code execution in jQuery?</b> <br><br>";
+
+echo " &#36;(document).ready(function({....})); <br> <br>";
+
+echo "<b>20) Document Load Vs Window. Load() jQuery</b> <br><br>";
+
+echo "&#36;(window).load() <br><hr><br>";
+
+echo "The code which gets included inside &#36;( window ).on( 'load', function() { ... }) runs only once the entire page is ready (not only DOM). <br><br>";
+
+echo "&#36;(document).ready() <br><hr><br>";
+
+echo "The ready() method is used to make a function available after the document is loaded. Whatever code you write inside the $( document ).ready() method will run once the page DOM is ready to execute JavaScript code. <br><br>";
+
+echo "<b>21) What is the difference between prop and attr?</b> <br><br>";
+
+echo " attr <br><hr><br> changes attributes for that HTML tag. <br><br>";
+
+echo " prop <br><hr><br> changes properties for that HTML tag as per the DOM tree. <br><br>";
+
+echo "<b>22) Explain Difference Between JQuery And JavaScript?</b> <br><br>";
+
+echo "Javascript <br><hr><br>";
+
+echo "1. JavaScript is an independent language and can exist on its own. <br>
+2. JavaScript uses more lines of code as we have to write our own code <br> 
+3. JavaScript code is written inside the script tag in a HTML page script tag <br> 
+4. All these can be done in JavaScript but we may have to write many lines of code. <br> 
+5. Being a language, it is heavier than jQuery <br> 
+6. JavaScript is verbose as one has to write many lines of code for a functionality <br> <br>";
+
+echo "jQuery <br><hr><br>";
+
+echo "1. jQuery is a JavaScript library. It would not have been invented had JavaScript was not there. <br> 
+2. It is a light-weight JavaScript library. It has only the DOM <br> 
+3. We just have to import the library and use the relevant function/method of the library in our code. <br> 
+4. In jQuery, we can add animation effects easily with fewer lines of code. <br> 
+5. jQuery has to be converted into JavaScript to make it run in a browser. <br> 
+6. Being a library, it is lightweight. It has a minified version of its code which makes it light-weight. <br><br>";
+
+echo "<b>23) How We Can Select The Specified li Element From The ListOf li Elements In ul ?</b> <br><br>";
+
+echo "&#36;('ul#deals_tab li.active'); using ul id attribute and select li class we can select specified element from the List of elements in ul <br><br>";
+
+echo "jQuery <br><hr><br>";
+
+echo "<b>24) In table Design Change The Color Of Even tr Elements To 'green' And Change The Color Of Odd tr Elements To 'blue' Color? Give An Example Code?</b> <br><br>";
+
+echo "using tr odd and even jquery we can set background color <br><br>";
+
+echo '&#36;("#table tr:odd" ).css("background-color","green" );<br>';
+echo '&#36;("#table tr:even").css("background-color","blue");<br><br>';
+
+echo "jQuery <br><hr><br>";
+
+echo "<b>25) How We Can Implement Animation Effects In Jquery?</b> <br><br>";
+
+echo "<div id='box'></div> 
+    <button id='b1'>Click Here !</button> <br><br> &#36;(document).ready(function(){
+    &#36;('button').click(function(){
+        &#36;('.box').animate({
+            width: 'toggle'
+        });
+    });
+}); <br><br>";
+
+echo "jQuery <br><hr><br>";
+
+echo "<b>26) Apply jQuery validation using library. </b> <br><br>";
+
+echo "attached page for find jQuery validation using jquery <b><a style='color:blue;' href='jquery-validation.php' target='_blank'>Click Here</a></b>";
+
+echo "<br><hr><br>";
+
+echo "<b>27) Create custom dynamic function for require field validator.</b> <br><br>";
+
+echo "attached page for require field validator <b><a style='color:blue;' href='validation.php' target='_blank'>Click Here</a></b>";
+
+echo "<br><hr><br>";
+
+echo "<b>28) Get state data by country selection (Ajax).</b><br><br>";
+
+echo "attached page for find country state using ajax <b><a style='color:blue;' href='country-state/index.php' target='_blank'>Click Here</a></b>";
+
+echo "<br><br>";
+
+echo "<b>29) Image uploading with preview.</b> <br><br>";
+
 ?>
+<input type="file" accept="image/*" onchange="loadFile(event)">
+<style type="text/css">
+#output {
+    display:none;
+}
+</style>
+<script type="text/javascript">
+var loadFile = function(event) {
+    var reader = new FileReader();
+    reader.onload = function(){
+      document.getElementById('output').style.display='block';
+      var output = document.getElementById('output');
+      output.src = reader.result;
+    };
+    reader.readAsDataURL(event.target.files[0]);
+};
+</script>
+
+<img id="output" width="600" height="300" style="border:1px solid #ddd; border-radius:4px; margin-top:20px; margin-bottom:11px;" />
+
+<?php
+
+echo "<br><hr><br>";
+
+?>
+
+
