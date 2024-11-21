@@ -1,0 +1,42 @@
+/* Create table country */
+
+CREATE TABLE `country` (
+  `id` tinyint(4) NOT NULL auto_increment,
+  `country` varchar(20) NOT NULL default '',
+  PRIMARY KEY  (`id`)
+);
+
+
+
+/*create table state*/
+
+CREATE TABLE `state` (
+  `id` tinyint(4) NOT NULL auto_increment,
+  `countryid` tinyint(4) NOT NULL,
+  `statename` varchar(40) NOT NULL,
+  PRIMARY KEY  (`id`)
+);
+
+
+
+
+/* Insert records into country table */
+
+INSERT INTO `country` VALUES (1, 'India');
+INSERT INTO `country` VALUES (2, 'USA');
+INSERT INTO `country` VALUES (3, 'Canada');
+
+
+
+
+/* Insert records into state table */
+
+INSERT INTO `state` VALUES (1, 1, 'Gujarat');
+INSERT INTO `state` VALUES (2, 1, 'Uttar Pradesh');
+INSERT INTO `state` VALUES (3, 1, 'Maharashtra');
+INSERT INTO `state` VALUES (4, 2, 'New York');
+INSERT INTO `state` VALUES (5, 2, 'Los Angeles');
+INSERT INTO `state` VALUES (6, 3, 'British Columbia');
+INSERT INTO `state` VALUES (7, 3, 'Toranto');
+
+
